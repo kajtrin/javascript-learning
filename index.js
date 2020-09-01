@@ -10,17 +10,19 @@ function doesSheLikeThis(food) { console.log(kasiasFavoriteFoods.includes(food))
 
 function addToFavorites(food) {
     //Logic to add passed item to list
-    //Print "Added <food>"
-    //Print list after add
-
     kasiasFavoriteFoods.push(food)
-    console.log("add " + food)
-    console.log(kasiasFavoriteFoods)
 
+    //Print "Added <food>"
+    console.log("add " + food)
+
+    //Print list after add
+    console.log(kasiasFavoriteFoods)
 }
 
 function getRandomFood(){
+    const randomIndex = Math.floor(Math.random() * kasiasFavoriteFoods.length)
     //Prints random item from list
+    console.log(kasiasFavoriteFoods[randomIndex])
 }
 
 
